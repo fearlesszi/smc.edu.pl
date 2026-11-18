@@ -7,7 +7,7 @@
 - Per-page titles, descriptions, canonical URLs, hreflang alternates, Open Graph and Twitter metadata; sitemap and robots.txt.
 - Root language detection uses browser preferences; the footer selector saves the visitor's selection. Unsupported languages fall back to Polish.
 - No build step, database, framework or server-side runtime.
-- 250 HTML files including 247 language-specific content pages, the browser-language landing page, a custom 404 page and image-credit notes.
+- 276 HTML files including 247 original language-specific content pages, 26 new admissions and credentials pages across 13 locales, the browser-language landing page, a custom 404 page and image-credit notes.
 
 ## Publish to GitHub Pages
 1. Create a separate repository for SMC and upload the *contents* of this folder to the repository root.
@@ -31,3 +31,28 @@ Photography loads from Unsplash CDN URLs. The Unsplash standard licence permits 
 
 ## Editing
 Each page is ordinary static HTML. Shared styles are in `assets/css/site.css`; browser interactions are in `assets/js/site.js`. Update every language version and `sitemap.xml` when adding routes.
+
+
+## November 2026 navigation and admissions update
+
+- The primary navigation now has seven regular destinations plus one highlighted `Admissions & Credentials` call-to-action, across all 13 language editions.
+- The former Library destination is now `Library & Toolkit`. Its original collection principles remain, with an added Student Digital Infrastructure & Education Offers directory and direct provider links.
+- Added `/[locale]/admissions/` in all 13 locales. Every page embeds the same SMC Google Form; the form is not duplicated per language.
+- Added `/[locale]/credentials/` in all 13 locales. This is a browser-only personal-record/specimen generator with print-to-PDF and 1200×630 PNG social-card export. It does not submit data to SMC or verify any achievement.
+- Existing `/[locale]/verify/` pages now link to the specimen studio while continuing to distinguish self-generated material from institution-issued records.
+- Updated all language-page navigation and footer links; added the 26 new routes to `sitemap.xml`.
+- The supplied blue and white crest SVGs were already byte-identical to the site's existing crest assets. The supplied principal signature was copied to `assets/principal-signature.svg` for future use on documents actually reviewed and issued by the institution. It is intentionally not embedded in the public self-service generator, because visitors could otherwise create documents appearing to carry the principal's endorsement.
+- Provider icons currently load as open-source Simple Icons SVG marks from `cdn.simpleicons.org`. They are recognizable brand marks, not claims of provider endorsement. Provider destinations open in a new tab.
+
+## Important identity and eligibility notice
+
+This website identifies as **Sovereign Modern College**. It must not borrow the regulatory status of **Signum Magnum College** merely because both use the initials “SMC”. The MFHEA audit report and WHED record identify Signum Magnum College as the Malta-based institution associated with MFHEA licence 2019-014. That licence is not evidence of accreditation or student status for Sovereign Modern College. The admissions and toolkit pages now state this distinction and link to the primary records.
+
+- MFHEA quality audit report: https://mfhea.mt/wp-content/uploads/2026/02/EQA-Audit-Report_Signum-Magnum-College.pdf
+- WHED institutional record: https://whed.net/institutions/IAU-027406
+
+No education discount is promised. Each provider decides eligibility independently and may require institutional recognition, current enrolment, age, regional eligibility, proof documents or manual review. An `@smc.edu.pl` address alone does not guarantee approval. Do not issue or present fabricated enrolment documents.
+
+## Deployment note
+
+This is a static GitHub Pages site. Upload the contents of the `smc-site` folder to the repository root. For a clean, consistent deployment, replace the repository's existing site files with the contents of this updated package rather than copying only the new HTML pages. The `CNAME`, `robots.txt`, existing language directories, assets, and all other original files must remain in place.
