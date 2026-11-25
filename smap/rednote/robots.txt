@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://smc.edu.pl/smap/rednote/sitemap.xml
